@@ -48,7 +48,6 @@ class SlotBrain {
                 winnings += 1
                 flushWinCount += 1
             }
-
             
             // STRAIGHTS
             if checkThreeInARow(slotRow) {
@@ -63,8 +62,6 @@ class SlotBrain {
                 winnings += 3
                 threeOfAKindWinCount += 1
             }
-
-
             
             // BONUSES:
             if flushWinCount == 3 {

@@ -191,14 +191,11 @@ class ViewController: UIViewController {
         for var containerNumber = 0; containerNumber < kNumberOfContainers; ++containerNumber {
             
             for var slotNumber = 0; slotNumber < kNumberOfSlots; ++slotNumber {
-                
-                
-                
-                
+
                 var slot:Slot
                 var slotImageView = UIImageView()
                 
-                println("slots count: \(slots.count)")
+                // println("slots count: \(slots.count)")
                 
                 if slots.count != 0 {
                     let slotContainer = slots[containerNumber]
@@ -303,7 +300,6 @@ class ViewController: UIViewController {
         
         containerView.addSubview(self.resetButton)
         
-        
         self.betOneButton = UIButton()
         self.betOneButton.setTitle("Bet One", forState: UIControlState.Normal)
         self.betOneButton.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
@@ -355,7 +351,6 @@ class ViewController: UIViewController {
         winnings = 0 // can be also self.
         
         updateMainView()
-        
         
     }
     
